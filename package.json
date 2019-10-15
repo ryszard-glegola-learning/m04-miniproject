@@ -1,7 +1,7 @@
 {
-  "name": "Miniproject",
+  "name": "Module 04 Miniproject",
   "version": "1.0.0",
-  "description": "My first task runner",
+  "description": "Final task",
   "main": "index.js",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
