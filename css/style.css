@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* Global */
 body {
@@ -14,10 +15,6 @@ section {
   border: 1px solid white;
 }
 
-.container {
-  border: 1px solid yellow;
-}
-
 .header {
   height: 100vh;
   background-image: url("../images/header.jpg");
@@ -26,11 +23,46 @@ section {
   border: 1px solid cyan;
 }
 
+.container {
+  border: 1px solid yellow;
+}
+
 .top-logo {
   border: 1px solid cyan;
 }
 
 .top-nav {
   border: 1px solid cyan;
+}
+
+.splash {
+  height: 95vh;
+  /* Nic lepszego nie wymyśliłem */
+  position: relative;
+}
+
+.splash-inner {
+  position: absolute;
+  border: 1px solid red;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-tellmemore {
+  display: inline-block;
+  width: 240px;
+  height: 65px;
+  background-color: yellow;
+  color: black;
+  margin: 24px auto 0 auto;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 0;
 }
 /*# sourceMappingURL=style.css.map */
