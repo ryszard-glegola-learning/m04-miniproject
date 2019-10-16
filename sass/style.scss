@@ -15,34 +15,26 @@ section {
 	width: 90%;
 	max-width: 1140px;
     margin: 0 auto;  /* centruje cala tresc strony w poziomie */
-    padding: 0 20px;
     border: 1px solid white;
 }
 
 .container {
-	display: flex;
-	flex-wrap: wrap;
 	border: 1px solid yellow;
 }
 
-.top-logo {
-	flex: 3;
-	border: 1px solid cyan;	
-	}
-
-.top-nav {
-	flex: 9;
-	border: 1px solid cyan;		
-	}
-
-.splash {
-	flex: 100%;
+.header {
     height: 100vh;
-    position: relative;
     background-image: url('../images/header.jpg');
     background-position: center center;
     background-size: cover;	
 	border: 1px solid cyan;	    
 	}
 
+.top-logo {
+	border: 1px solid cyan;	
+	}
+
+.top-nav {
+	border: 1px solid cyan;		
+	}
 
