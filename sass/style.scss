@@ -14,20 +14,31 @@ body {
 
 section {
 	width: 90%;
-	max-width: 1140px;
-    margin: 0 auto;  /* centruje cala tresc strony w poziomie */
+	max-width: 1400px;
+    margin: 0 auto;
     padding: 0;
+	border: 1px solid green;
 }
 
 .header {
-    height: 100vh;
+	height: 100vh;
     min-height: 570px;
+    max-height: 700px;
     background-image: url('../images/header.jpg');
-    background-position: center center;
+    background-position: center center; 
     background-size: cover;	  
 	}
 
 .container {
+	max-width: 1000px;
+	border: 2px solid blue;
+}
+
+.row {
+	border: 1px solid white;
+}
+
+.col {
 }
 
 .top-logo {
@@ -37,8 +48,8 @@ section {
 	}
 
 .splash {
-    height: 92vh;  /* Nic lepszego nie wymyśliłem */
     position: relative;
+  	height: 700px;    
 }
 
 .splash-inner {
@@ -53,7 +64,7 @@ section {
     display: inline-block;
     width: 240px;
     height: 65px;
-    background-color: yellow;
+    background-color: #fed136;  /* yellow */
     color: black;
     margin: 12px auto 0 auto;
     padding: 20px 0 5px 0;
@@ -65,3 +76,6 @@ section {
     border-width: 0; 
 }
 
+.services {
+	background-color: #fff;
+}
