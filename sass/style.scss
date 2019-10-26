@@ -78,6 +78,7 @@ p {
     width: 290px;
     margin: 0 0 50px 0;
 }
+
 .col-middle {
     width: 290px;
     margin: 0 35px 50px 35px;
@@ -97,14 +98,16 @@ p {
 }
 
 .portfolio {
-    background-color: #ccc;   /*f7f7f7*/
+    background-color: #f7f7f7;   
     color: #000;
     text-align: center;
     padding: 0 0 70px 0;
-    .col-4 {
-        padding: 0;
-        margin: 0 0 50px 0;
+    .col-side, .col-middle {
         background-color: #fff;
+        padding-bottom: 30px;   
+    }
+    h3 {
+        margin-bottom: 3px;
     }
     p {
         color: #777;

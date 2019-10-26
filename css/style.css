@@ -106,17 +106,19 @@ p {
 }
 
 .portfolio {
-  background-color: #ccc;
-  /*f7f7f7*/
+  background-color: #f7f7f7;
   color: #000;
   text-align: center;
   padding: 0 0 70px 0;
 }
 
-.portfolio .col-4 {
-  padding: 0;
-  margin: 0 0 50px 0;
+.portfolio .col-side, .portfolio .col-middle {
   background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.portfolio h3 {
+  margin-bottom: 3px;
 }
 
 .portfolio p {
