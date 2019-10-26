@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* Variables */
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,8 +20,32 @@ section {
 
 p {
   margin: 0;
+  font-family: "Droid Serif", serif;
+  line-height: 1.5rem;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Droid Serif", serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*Custom, local*/
 .header {
   height: 700px;
   min-height: 570px;
@@ -28,14 +58,42 @@ p {
   padding: 20px 0;
 }
 
+.header .container .row .top-nav {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: right;
+}
+
+.header .container .row .top-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .container .row .top-nav ul li {
+  display: inline-block;
+}
+
+.header .container .row .top-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: 0 35px 0 0;
+}
+
+.header .container .row .top-nav ul li a:hover {
+  color: .header .container .row .top-nav ul li a:hover ccc;
+}
+
 .container {
   max-width: 1000px;
   /* Własciwe miejsce na wymuszenie szerokosci */
 }
 
 .row {
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
 }
 
 .splash {
@@ -52,14 +110,15 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.splash-inner h3 {
-  font-size: 1.8rem;
-  font-weight: bold;
+.splash-inner h4 {
+  font-size: 38px;
+  margin: 0 0 25px 0;
 }
 
 .splash-inner h1 {
-  font-size: 3rem;
+  font-size: 75px;
   font-weight: bold;
+  margin: 25px 0 40px 0;
 }
 
 .button-tellmemore {
@@ -73,6 +132,7 @@ p {
   padding: 20px 0 5px 0;
   border-radius: 5px;
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -101,6 +161,11 @@ p {
   padding: 0 0 120px;
 }
 
+.services h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
 .services p {
   color: #777;
 }
@@ -119,6 +184,8 @@ p {
 
 .portfolio h3 {
   margin-bottom: 3px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .portfolio p {
@@ -131,12 +198,13 @@ p {
 }
 
 .services .row .col-12 h2, .portfolio .row .col-12 h2 {
-  /* Tytuł sekcji*/
-  font-size: 18px;
+  font-size: 3.5rem;
+  margin: 0;
 }
 
 .services .row .col-12 p, .portfolio .row .col-12 p {
   color: #777;
   font-style: italic;
 }
+
 /*# sourceMappingURL=style.css.map */
