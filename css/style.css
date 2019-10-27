@@ -13,6 +13,7 @@ body {
 
 section, footer {
   width: 90%;
+  /*    min-width: 1000px; */
   max-width: 1400px;
   margin: 0 auto;
   background-color: #fff;
@@ -60,8 +61,11 @@ h4 {
 }
 
 .col,
+.col-12,
+.col-md-6,
 .col-lg-4 {
-  border: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 /*Custom, local*/
@@ -73,28 +77,29 @@ h4 {
   background-size: cover;
 }
 
-.top-nav, .top-logo {
+.top-nav,
+.top-logo {
   padding: 20px 0;
 }
 
-.header .container .row .top-nav {
+.top-nav {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   text-align: right;
 }
 
-.header .container .row .top-nav ul {
+.top-nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.header .container .row .top-nav ul li {
+.top-nav ul li {
   display: inline-block;
 }
 
-.header .container .row .top-nav ul li a {
+.top-nav ul li a {
   text-decoration: none;
   color: #fff;
   display: block;
@@ -148,8 +153,6 @@ h4 {
 
 .services {
   background-color: #fff;
-  color: #000;
-  text-align: center;
 }
 
 .services h3 {
@@ -163,12 +166,10 @@ h4 {
 
 .portfolio {
   background-color: #f7f7f7;
-  color: #000;
-  text-align: center;
 }
 
 .portfolio h3 {
-  margin: 5px auto 3px;
+  margin: 5px 0 3px;
   text-transform: capitalize;
   font-size: 1.5rem;
 }
@@ -176,11 +177,12 @@ h4 {
 .portfolio p {
   margin: 0 auto;
   color: #777;
+  padding: 5px;
 }
 
 .portfolio .portfolio-tile {
   width: 290px;
-  height: 365px;
+  height: 375px;
   background-color: #fff;
   margin: 0 auto 30px;
   padding: 0;
@@ -196,6 +198,8 @@ h4 {
 .services,
 .portfolio {
   padding: 120px 0 80px;
+  color: #000;
+  text-align: center;
 }
 
 .services h2,
@@ -258,26 +262,44 @@ h4 {
 }
 
 /* Media */
-@media (max-width: 1110px) {
+@media (max-width: 992px) {
   section, footer {
     width: 100%;
   }
-  .header .container .row .top-nav ul li a {
-    padding: 0 10px 0 0;
+  .header .top-nav ul li a {
+    padding: 0 8px 0 0;
   }
-  .services .col,
-  .portfolio .col {
-    padding: 40px 0 30px;
+  .header .splash-inner h1 {
+    font-size: 3.0rem;
   }
-  .services .col h2,
-  .portfolio .col h2 {
+  .header .splash-inner h4 {
+    font-size: 1.5rem;
+  }
+  .services,
+  .portfolio {
+    padding: 30px 0;
+  }
+  .services h2,
+  .portfolio h2 {
     font-size: 2.2rem;
   }
-  .services .col-lg-4,
-  .portfolio .col-lg-4 {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 40px;
+  .services p,
+  .portfolio p {
+    padding: 5px;
+  }
+  .services .col-12,
+  .services .col-md-4 {
+    margin-bottom: 15px;
+  }
+  .portfolio-header,
+  .services-header {
+    padding: 20px 0 30px;
+  }
+  .page-footer .footer-inner {
+    padding: 0 0 60px 0;
+  }
+  .page-footer .copyright {
+    padding: 30px 0;
   }
   .page-footer .hide-lores {
     display: none;
